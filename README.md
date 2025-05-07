@@ -23,7 +23,7 @@ Some of the project tools are:
 | Backend | Django + Django REST Framework |
 | Frontend | React.js (interactive interface + authentication system) |
 | Machine Learning | Python, LSTM (Long Short-Term Memory) |
-| Database | SQLite o PostgreSQL (according to deployment) |
+| Database | SQLite or PostgreSQL (according to deployment) |
 
 ---
 ### 📦 Installation
