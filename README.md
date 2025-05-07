@@ -1,9 +1,9 @@
 # 📈 stock-prediction-website
 
 [![MIT License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-![Made with Python](https://img.shields.io/badge/Made%20with-Python-blue.svg)
-![Made with React](https://img.shields.io/badge/Frontend-Reactjs-61dafb?logo=react)
-![Backend-Django](https://img.shields.io/badge/Backend-Django-092e20?logo=django)
+[![Made with Python](https://img.shields.io/badge/Made%20with-Python-blue.svg)](https://www.python.org/)
+[![Made with React](https://img.shields.io/badge/Frontend-Reactjs-61dafb?logo=react)](https://react.dev/)
+[![Backend-DRF](https://img.shields.io/badge/Backend-DRF-red?logo=django)](https://www.django-rest-framework.org/)
 ![Status](https://img.shields.io/badge/Status-In%20development-yellow)
 
 A website to predict stock price movements, where it takes the stock ticker and gives you the prediction result. Ideal for finance enthusiasts, developers, or researchers interested in predictive market analysis.
@@ -33,7 +33,7 @@ Some of the project tools are:
 
 ---
 ### 📄 License
-This project is licensed under the MIT License.
+This project is licensed under [MIT License](LICENSE).
 You are free to use, modify, and distribute it, as long as you include a copy of the original license.
 
 ---
