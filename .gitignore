@@ -1,44 +1,30 @@
-# Entorno virtual (si accidentalmente lo creas en el proyecto)
+# Python
+__pycache__/
+*.py[cod]
 venv/
 env/
 
-# Archivos de Python compilados
-__pycache__/
-*.py[cod]
-*.pyo
+# Node.js
+node_modules/
+dist/
+dist-ssr/
 
-# Archivos temporales
-*.log
-*.sqlite3
-
-# Variables de entorno
-*.env
-
-# Docker
-*.pid
-*.db
-*.sock
-
-# Archivos y carpetas de sistema
-.DS_Store
-Thumbs.db
-
-# VSCode / IDEs
-.vscode/
-.idea/
-
-# Entorno de ejecución
+# Environments
 .env
 .env.*
+.env.local
 
-# Archivos de cobertura, testing, etc.
+# Logs and databases
+*.log
+*.sqlite3
+*.pid
+*.sock
+
+# IDEs
+.vscode/
+.idea/
+.DS_Store
+
+# Build and testing
+coverage/
 htmlcov/
-coverage.*
-
-# Archivos creados por pip
-pip-log.txt
-
-# Archivos de compilación de JS (si luego agregas React)
-node_modules/
-build/
-dist/
