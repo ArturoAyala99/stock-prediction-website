@@ -4,7 +4,7 @@ services:
   backend:
     build:
       context: ./backend
-      dockerfile: backend.Dockerfile
+      dockerfile: Dockerfile
     container_name: django-backend
     ports:
       - "8000:8000"
@@ -12,3 +12,16 @@ services:
       - ./backend:/app
     #env_file:
     #  - .backend/.env
+
+  frontend:
+      build:
+        context: ./frontend
+        dockerfile: Dockerfile
+      container_name: react-frontend
+      ports:
+        - "5173:5173"
+      volumes:
+        - ./frontend:/app  # Monta el código fuente
+        - /app/node_modules  # Evita sobrescribir dependencias
+      environment:
+        - CHOKIDAR_USEPOLLING=true  # Para detectar cambios en Docker
