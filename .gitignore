@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+venv/
+env/
+
+# Node.js
+node_modules/
+dist/
+dist-ssr/
+
+# Environments
+.env
+.env.*
+.env.local
+
+# Logs and databases
+*.log
+*.sqlite3
+*.pid
+*.sock
+
+# IDEs
+.vscode/
+.idea/
+.DS_Store
+
+# Build and testing
+coverage/
+htmlcov/
