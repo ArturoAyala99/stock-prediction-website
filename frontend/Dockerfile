@@ -8,6 +8,8 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm install
 
+COPY . .
+
 # Expone el puerto de Vite en desarrollo (5173 por defecto)
 EXPOSE 5173
 

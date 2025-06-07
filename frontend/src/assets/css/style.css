@@ -1,7 +1,7 @@
 body{
     background-color: #212529;
 }
-.bg-light-dark{
+.bg-light-dark-custom{
     background-color: #2b3035;
 }
 #root{
@@ -9,6 +9,6 @@ body{
     flex-direction: column;
     min-height: 100vh;
 }
-.container{
+.container-custom{
     flex: 1;
 }

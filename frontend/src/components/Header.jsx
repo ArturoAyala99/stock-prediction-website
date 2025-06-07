@@ -1,18 +1,36 @@
 import React from "react"
-import Button from "./Button"
+import ButtonComponent from "./ButtonComponent"
+import { Navbar, Container, Nav, Button } from 'react-bootstrap';
+import { Link } from "react-router-dom"
 
 const Header = () => {
   return (
     <>
+      <Navbar className="navbar container pt-3 pb-3 align-items-start">
+        <Container>
+          <Link className="navbar-brand text-light" to="/">Stock Prediction Portal</Link>
+
+          <Nav className="ms-auto">
+            <ButtonComponent text="Login" class="btn btn-outline-info" url="login" />
+            &nbsp;
+            <ButtonComponent text="Register" class="btn btn-info" url="register" />
+          </Nav>
+        </Container>
+      </Navbar>
+
+    {/*
       <nav className="navbar container pt-3 pb-3 align-items-start">
-        <a className="navbar-brand text-light" href="">Stock Prediction Portal</a>
+        <Link className="navbar-brand text-light" to="/">Stock Prediction Portal</Link>
 
         <div>
-          <Button text="Login" class="btn btn-outline-info" />
+          <ButtonComponent text="Login" class="btn btn-outline-info" url="login" />
           &nbsp;
-          <Button text="Register" class="btn btn-info" />
+          <ButtonComponent text="Register" class="btn btn-info" url="register" />
         </div>
       </nav>
+
+      */
+    }
     </>
   )
 }
