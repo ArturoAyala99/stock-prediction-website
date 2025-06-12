@@ -20,7 +20,7 @@ const Register = () => {
   const handleRegistration = async (e) => {
     e.preventDefault(); // avoid refresh the page
 
-    setLoading(true);
+    setLoading(true); // to show the loading icon
     
     const user_data = {
       username,
@@ -58,7 +58,7 @@ const Register = () => {
     }
   }
 
-  const handleCloseModal = () => {
+  const handleCloseModal = () => { // we pass the function to ModalMessage Component to close de modal
     setShowModal({
       'modal': false,
       'title': '',
@@ -76,9 +76,9 @@ const Register = () => {
                 <Card.Title as="h1" className="text-light mb-4"> Create an Account </Card.Title>
 
                 <Form className="lead text-light" onSubmit={handleRegistration}>
-                  <Form.Control type="text" className="form-control mb-4" placeholder="Enter username" value={username} onChange={(e) => setUsername(e.target.value)} />
-                  <Form.Control type="email" className="form-control mb-4" placeholder="Enter email" value={email} onChange={(e) => setEmail(e.target.value)} />
-                  <Form.Control type="password" className="form-control mb-4" placeholder="Set password" value={password} onChange={(e) => setPassword(e.target.value)} />
+                  <Form.Control type="text" required className="form-control mb-4" placeholder="Enter username" value={username} onChange={(e) => setUsername(e.target.value)} />
+                  <Form.Control type="email" required className="form-control mb-4" placeholder="Enter email" value={email} onChange={(e) => setEmail(e.target.value)} />
+                  <Form.Control type="password" required className="form-control mb-4" placeholder="Set password" value={password} onChange={(e) => setPassword(e.target.value)} />
                   {
                     loading ? ( // if loading is true we show the loading
                       <Button type="submit" className="btn btn-info d-block mx-auto" disabled>
