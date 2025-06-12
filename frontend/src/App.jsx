@@ -5,24 +5,27 @@ import Register from './components/Register';
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Login from './components/Login';
+import AuthProvider from './AuthProvider';
 
 function App() {
 
   return (
     <>
-      <BrowserRouter>
+      <AuthProvider>
+        <BrowserRouter>
 
-        <Header/>
+          <Header/>
 
-        <Routes>
-          <Route  path='/' element={ <Main /> } />
-          <Route  path='/register' element={ <Register /> } />
-          <Route  path='/login' element={ <Login /> } />
-        </Routes>
+          <Routes>
+            <Route  path='/' element={ <Main /> } />
+            <Route  path='/register' element={ <Register /> } />
+            <Route  path='/login' element={ <Login /> } />
+          </Routes>
 
-        <Footer/>
+          <Footer/>
 
-      </BrowserRouter>
+        </BrowserRouter>
+      </AuthProvider>
     </>
   )
 }

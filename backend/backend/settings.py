@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'accounts',
     'apis',
-    'corsheaders' # django-cors-headers dependency
+    'corsheaders', # django-cors-headers dependency
+    'rest_framework_simplejwt' # implementing JWT
 ]
 
 MIDDLEWARE = [
@@ -130,3 +131,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ALLOWED_ORIGINS = [ # django-cors-headers dependency
     "http://localhost:5173",
 ]
+
+REST_FRAMEWORK = { # implementing JWT
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    )
+}
