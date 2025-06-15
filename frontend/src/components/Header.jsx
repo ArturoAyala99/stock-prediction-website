@@ -29,7 +29,11 @@ const Header = () => {
           <Nav className="ms-auto">
             {
               isLoggedIn ? (
-                <Button type="button" className="btn btn-danger" onClick={handleLogout}>Logout</Button>
+                <>
+                  <ButtonComponent text="Dashboard" class="btn btn-outline-info" url="dashboard" />
+                  &nbsp;
+                  <Button type="button" className="btn btn-danger" onClick={handleLogout}>Logout</Button>
+                </>
               ) : (
                 <>
                   <ButtonComponent text="Login" class="btn btn-outline-info" url="login" />

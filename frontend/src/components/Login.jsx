@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react"
-import axios from 'axios'
+import axiosInstance from "../axiosInstance";
 import ModalMessage from "./ModalMessage";
 import { Container, Button, Row, Col } from 'react-bootstrap'
 import { Form, Card } from "react-bootstrap";
@@ -31,15 +31,15 @@ const Login = () => {
     }
 
     try {
-      const response = await axios.post('http://localhost:8000/api/v1/token/', user_data);
+      const response = await axiosInstance.post('token/', user_data);
 
-      // set the access and refresh token from django to the localStorage
+      // set the access and refresh token obteined from django to the localStorage
       localStorage.setItem('accessToken', response.data.access);
       localStorage.setItem('refreshToken', response.data.refresh);
 
       setIsLoggedIn(true);
 
-      navigate('/'); // if login is successful we go to the home page
+      navigate('/dashboard'); // if login is successful we go to the home page
 
     } catch (error) {
       const data = error.response.data;

@@ -20,7 +20,7 @@ const Main = () => {
                   analysis.
                 </Card.Text>
 
-                <ButtonComponent text="login" class="btn btn-outline-info" url="login" />
+                <ButtonComponent text="Explore now" class="btn btn-outline-info" url="dashboard" />
               </Card.Body>
             </Card>
 
