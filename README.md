@@ -26,15 +26,18 @@ Some of the project tools are:
 | Database | SQLite or PostgreSQL (according to deployment) |
 
 ---
-### 📦 Installation
-⚠️ This project is still in development. These basic instructions may change in future versions.
-
-#### 1. Clone the repository
-
----
 ### 📄 License
 This project is licensed under [MIT License](LICENSE).
 You are free to use, modify, and distribute it, as long as you include a copy of the original license.
+
+---
+## 📸 Capturas de pantalla
+![home](images/home.png)  
+![login](images/login.png)  
+![register](images/register.png) 
+![prediction1](images/prediction1.png)
+![prediction2](images/prediction2.png)
+![prediction3](images/prediction3.png)
 
 ---
 ### ✍️ Author
