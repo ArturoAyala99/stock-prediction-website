@@ -20,8 +20,8 @@ A website to predict stock price movements, where it takes the stock ticker and 
 Some of the project tools are:
 | Stack | Technology |
 |-------|------------|
-| Backend | Django + Django REST Framework |
-| Frontend | React.js (interactive interface + authentication system) |
+| Backend | Django + Django REST Framework (Containerized with Docker) |
+| Frontend | React.js (interactive interface + authentication system) in Docker containers |
 | Machine Learning | Python, LSTM (Long Short-Term Memory) |
 | Database | SQLite or PostgreSQL (according to deployment) |
 
