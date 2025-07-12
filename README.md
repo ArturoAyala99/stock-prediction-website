@@ -2,6 +2,7 @@
 
 [![MIT License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Made with Python](https://img.shields.io/badge/Made%20with-Python-blue.svg)](https://www.python.org/)
+[![Made with Docker](https://img.shields.io/badge/Made%20with-Docker-blue?logo=docker)](https://www.docker.com/)
 [![Made with React](https://img.shields.io/badge/Frontend-Reactjs-61dafb?logo=react)](https://react.dev/)
 [![Backend-DRF](https://img.shields.io/badge/Backend-DRF-red?logo=django)](https://www.django-rest-framework.org/)
 ![Status](https://img.shields.io/badge/Status-In%20development-yellow)
@@ -24,6 +25,7 @@ Some of the project tools are:
 | Frontend | React.js (interactive interface + authentication system) in Docker containers |
 | Machine Learning | Python, LSTM (Long Short-Term Memory) |
 | Database | SQLite or PostgreSQL (according to deployment) |
+| DevOps | Docker Compose for multi-container orchestration |
 
 ---
 ### 📄 License
