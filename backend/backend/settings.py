@@ -143,3 +143,7 @@ SIMPLE_JWT = { # increasing the access token lifetime (5 to 15)
     "ACCESS_TOKEN_LIFETIME": timedelta(minutes=15),
     "REFRESH_TOKEN_LIFETIME": timedelta(days=1),
 }
+
+# Media Files configurations
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR /'backend' /'media'
