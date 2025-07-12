@@ -1,5 +1,5 @@
 # Dockerfile for Django backend
-FROM python:3.13-slim
+FROM python:3.11-slim
 
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
@@ -7,6 +7,8 @@ ENV PYTHONUNBUFFERED=1
 WORKDIR /app
 
 COPY . /app
+
+RUN mkdir -p /app/backend/media
 
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
